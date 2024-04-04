@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeted Login only html css</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+ .container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    animation: animate 4s linear infinite;
+ }
+ @keyframes animate {
+     0% {
+        filter: hue-rotate(0deg)
+    }
+    100%{
+        filter: hue-rotate(360deg)
+    }
+}
+
+ .row {
+    display: inline-flex;
+    margin-top:  -32px;
+    margin-left:  -50px;
+    overflow: hidden;
+ }
+  .row:nth-child(even){
+    margin-left: 1px;
+  }
+
+  .hexagon 
+  {
+  position: relative;
+  height: 110px;
+  width: 100px;
+  background: #111;
+  margin: 1px;
+  clip-path: polygon(50% 0%, 100% 25%,100% 75%,50% 100%,0% 75%,0% 25% );
+  transition: 2s;  
+}
+
+ .hexagon::before
+ {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    background:  rgba(255,255,255, 0.02);
+ }
+
+ .hexagon:hover {
+    transition: 0s;
+    background: #0f0;
+    cursor: alias;
+
+
+ }
+
+ section
+  {
+    position: absolute;
+    height: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  
+  section .singin
+  {
+    position: absolute;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  }
+
+  section .singin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  section .singin .content h2 {
+    font-size: 2em;
+    color: #0f0;
+    text-transform: uppercase;
+    animation: animate 4s linear infinite;
+  }
+
+  
+  section .singin .content .form 
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  section .singin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+  }
+
+  section .singin .content .form .inputBox input   {
+    position: relative;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  section .singin .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding:15px 10px;
+    font-style: normal ;
+    color: #aaa;
+    transition:  0.5s;
+    pointer-events: none;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div class ="container">
+       <div class="row 1">
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+        </div>
+
+        <div class="row altline2">
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+        </div>
+        <div class="row line2">
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+        </div>
+        <div class="row altline3">
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+                <div class = "hexagon"></div>
+            </div>
+        <div class="row line3">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+         </div>
+
+
+        <div class="row altline4">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+        </div>
+        <div class="row line4">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+         </div>
+        <div class="row altline5">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+        </div>
+        <div class="row line5">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+        </div>
+        <div class="row">
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+    <div class = "hexagon"></div>
+        </div>
+        <div class="row">
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+        </div>
+        <div class="row">
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+            <div class = "hexagon"></div>
+        </div>
+        </div>
+    
+
+
+
+ <div class="singin">
+    <div class="content">
+        <h2>Login</h2>
+        <div class ="form">
+            <div class ="inputBox">
+            <input type ="text" required></input>
+               <i>Username</i>
+            </div>
+           <div class ="inputBox">
+          <input type = "password" required>
+         <i>Password</i>
+        </div>
+        <div class ="links">
+   <a href="#">Forgot Password</a>
+   <a href="#">Sing up </a>
+        </div>
+       <div class ="inputBox">
+        <input type="submit" value="Login">
+        </div>
+        </div>
+
+    
+
+    </section>
+    </body>
+
+</html>
